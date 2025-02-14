@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhop com Videos</title>
+</head>
+<body>
+    <h1>Inserirndo videos hospedados localmente</h1>
+    <p>Este video esta hopedado no meu proprio servidor</p>
+    <video src="midia/01-02.webm" controls width="500" loop autoplay></video>
+
+    <video controls width="500" poster="imagens/limoes-capa.png" autoplay loop>
+        <source src="midia/01-04.mkv" type="video/mp4">
+        <source src="midia/01-01.mp4" type="video/mp4">
+        <source src="midia/01-02.webm" type="video/webm">
+        <source src="midia/01-03.ogv" type="video/ogg">
+        <p>Seu navegador não contem compatibilidade com reprodução de videos.</p>
+    </video>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=o8TPs-xXbXVf9fTt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
