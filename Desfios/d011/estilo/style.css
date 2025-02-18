@@ -1,13 +1,23 @@
 @charset "UTF-8";
 
 body{
-    background-image: url("espaco.jpg");
-    background-position: center;
-    background-size: cover;
+    background-color: blue;
+    background-image: url('../imagens/espaco.jpg');
+    position: relative;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    padding: 10px;
+    height: 96.1vh;
 }
 
 div{
-    text-align: center;
+    background-image: url('../imagens/astronauta.png');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 508px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
