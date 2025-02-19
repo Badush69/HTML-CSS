@@ -6,21 +6,28 @@
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 :root{
     --fonte-titulo: "Passion One", serif;
     --fonte-padrão: "Sriracha", serif;
-    --fonte-01: Arial, Helvetica, sans-serif;
+    --fonte-01: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
     background-color: black;
+    padding: 20px;
     color: white;
     text-align: center;
 }
 
 header h1{
     font-family: var(--fonte-titulo);
-    font-size: 3em;
+    font-size: 8vw;
+    font-variant: small-caps;
 }
 
 header p{
@@ -28,42 +35,72 @@ header p{
     font-weight: lighter;
 }
 
-p{
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
     font-family: var(--fonte-padrão);
+    font-size: 2.5vw;
 }
 
+section p{
+    padding-bottom: 2em;
+}
 
-.fundo{
+.normal{
     padding: 60px 0px;
+    background-color: white;
+    color: black;
 }
 
-.conteudo{
-
-}
-.conteudo > p{
-    padding-left: 15px;
+.normal > p{
+    padding-left: 30px;
 }
 
-.conteudoImg{
-    width: 215px;
+.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.432);
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-.conteudoImg > p{
-    padding-left: 15px;
+.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.623);
 }
 
 #fundo01{
-    padding: 60px 0px;
     background-image: url(../imagens/background001.jpg);
+    background-position: right center;
     background-color: gray;
-    height: 200px;
-    width: 200px;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 #fundo02{
-    padding: 60px 0px;
     background-image: url(../imagens/background002.jpg);
     background-color: gray;
-    height: 200px;
-    width: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+footer p{
+    text-align: center;
+    font: var(--fonte-01);
+    font-size: 0.8em;
 }
